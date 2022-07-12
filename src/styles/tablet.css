@@ -1,0 +1,170 @@
+@media only screen and (min-width: 513px) and (max-width: 1024px) {
+    nav {
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .hamburger {
+        display: flex;
+        font-size: 7vw;
+        color: #fff;
+        align-items: center;
+        border: none;
+        background-color: #ff8303;
+    }
+    
+    #menu {
+        width: 500px;
+        height: 100%;
+        position: absolute;
+        transform: translate(-500px, 0);
+        transition: transform 0.3s ease-in-out;
+        background-color:#333;
+        z-index: 30;
+    }
+
+    #menu.open {
+        transform: translate(0,0)
+    }
+
+    #logo-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #logo-mobile h1 {
+        font-size: 7vw;
+        color: #fff;
+    }
+    
+
+    .logo {
+        flex-basis: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 7vw;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 4em;
+        align-items: flex-start;
+    }
+
+    .menu-item {
+        width: 100%;
+        font-size: 4vw;
+        color: #fff;
+        border-top: 1px solid #3a3a3a;
+    }
+
+    .menu-item:last-child {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+    .menu-item a {
+        display: flex;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .logo {
+        flex-basis: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 7vw;
+    }
+
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero-image_2-medium.jpg");
+        min-height: 450px;
+    }
+
+    .hero-text {
+        top: 0;
+        left: 0;
+    }
+
+    .hero-text h2 {
+        font-size: 4vh;
+        background-color: rgb(255 87 34 / 80%);
+    }
+
+    .explore {
+        font-size: 3vh;
+        padding: .7em;
+        margin-top: 0px;
+    }
+
+    .content {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .daftar-resto {
+        font-size: 9vw;
+    }
+    
+    .card-header {
+        max-height: 230px;
+    }
+
+    .card-title h3 {
+        font-size: 3vw;
+    }
+
+    .card-content {
+        padding: .3em 1em;
+    }
+
+    .read-more {
+        font-size: 2vw;
+        padding: 20px;
+    }
+
+    .user-rating {
+        font-size: 2vw;
+    }
+
+    .apps-header {
+        font-size: 3vw;
+    }
+
+    .copyright {
+        font-size: 2vw;
+    }
+
+    .download-apps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-apps a {
+        margin: .5rem;
+    }
+
+    .resto-address {
+        line-height: 1em;
+    }
+
+    .food-menu, .drink-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .food-menu h3, .drink-menu h3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
